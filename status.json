@@ -1,12 +1,12 @@
 {
   "status": "degraded",
-  "cpu_percent": 11.6,
-  "memory_percent": 32.2,
+  "cpu_percent": 20.3,
+  "memory_percent": 32.5,
   "disk_percent": 33.9,
-  "uptime_seconds": 69933,
+  "uptime_seconds": 70238,
   "agent_count": 0,
   "service_count": 7,
   "platform": "Ubuntu / ARM64",
   "amd64_emulation": false,
-  "updated_at": "2026-09-29T12:45:43Z"
+  "updated_at": "2026-09-29T12:50:48Z"
 }
