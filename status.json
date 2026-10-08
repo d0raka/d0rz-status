@@ -3,10 +3,10 @@
   "cpu_percent": 1.6,
   "memory_percent": 17.3,
   "disk_percent": 14.1,
-  "uptime_seconds": 875354,
+  "uptime_seconds": 875653,
   "agent_count": 0,
   "service_count": 7,
   "platform": "Ubuntu / ARM64",
   "amd64_emulation": false,
-  "updated_at": "2026-10-08T20:29:24Z"
+  "updated_at": "2026-10-08T20:34:23Z"
 }
