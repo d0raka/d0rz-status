@@ -1,8 +1,19 @@
 # d0rz-status
 
+[![CI](https://github.com/d0raka/d0rz-status/actions/workflows/ci.yml/badge.svg)](https://github.com/d0raka/d0rz-status/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
+
 Public workstation snapshot for the Live System strip on the [d0rz](https://github.com/d0raka/d0rz) homepage.
 
 This repository is a data bridge. It does not contain the website, private server configuration, or credentials.
+
+## Demo
+
+The live document the site reads:
+
+https://raw.githubusercontent.com/d0raka/d0rz-status/main/status.json
+
+The homepage that renders it is [d0rz.is-a.dev](https://d0rz.is-a.dev).
 
 ## Features
 
@@ -12,7 +23,7 @@ This repository is a data bridge. It does not contain the website, private serve
 
 ## Tech stack
 
-JSON only. There is no build step and no runtime.
+JSON only. There is no build step and no runtime. CI checks that `status.json` parses.
 
 ## Setup
 
