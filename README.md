@@ -1,18 +1,41 @@
 # d0rz-status
 
-Public JSON for the Live System strip on [d0rz.is-a.dev](https://d0rz.is-a.dev).
+[![CI](https://github.com/d0raka/d0rz-status/actions/workflows/ci.yml/badge.svg)](https://github.com/d0raka/d0rz-status/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
 
-This repository is a data bridge only. It does not contain the website, private server configuration, or credentials.
+Public workstation snapshot for the Live System strip on the [d0rz](https://github.com/d0raka/d0rz) homepage.
 
-## status.json
+This repository is a data bridge. It does not contain the website, private server configuration, or credentials.
 
-`status.json` is the only payload the public site should fetch. The file in this repository is a schema bootstrap. A workstation exporter will overwrite it later.
+## Demo
 
-Public raw URL:
+The live document the site reads:
 
 https://raw.githubusercontent.com/d0raka/d0rz-status/main/status.json
 
-## Schema
+The homepage that renders it is [d0rz.is-a.dev](https://d0rz.is-a.dev).
+
+## Features
+
+- One public JSON document, `status.json`
+- A fixed schema: health, CPU, memory, disk, uptime, agent count, service count, platform, and timestamp
+- No hostnames, addresses, ports, or tokens
+
+## Tech stack
+
+JSON only. There is no build step and no runtime. CI checks that `status.json` parses.
+
+## Setup
+
+Clone the repository. There is nothing to install.
+
+## Usage
+
+The site reads:
+
+https://raw.githubusercontent.com/d0raka/d0rz-status/main/status.json
+
+The committed file is a schema bootstrap. A workstation exporter overwrites it. Keep `agent_count` a number. Do not add private fields.
 
 ```json
 {
@@ -29,4 +52,6 @@ https://raw.githubusercontent.com/d0raka/d0rz-status/main/status.json
 }
 ```
 
-`agent_count` must stay a number. Do not add hostnames, IP addresses, ports, SSH details, Docker data, filesystem paths, tokens, or other private fields.
+## License
+
+MIT. See [LICENSE](LICENSE).
