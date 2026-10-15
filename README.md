@@ -1,18 +1,30 @@
 # d0rz-status
 
-Public JSON for the Live System strip on [d0rz.is-a.dev](https://d0rz.is-a.dev).
+Public workstation snapshot for the Live System strip on the [d0rz](https://github.com/d0raka/d0rz) homepage.
 
-This repository is a data bridge only. It does not contain the website, private server configuration, or credentials.
+This repository is a data bridge. It does not contain the website, private server configuration, or credentials.
 
-## status.json
+## Features
 
-`status.json` is the only payload the public site should fetch. The file in this repository is a schema bootstrap. A workstation exporter will overwrite it later.
+- One public JSON document, `status.json`
+- A fixed schema: health, CPU, memory, disk, uptime, agent count, service count, platform, and timestamp
+- No hostnames, addresses, ports, or tokens
 
-Public raw URL:
+## Tech stack
+
+JSON only. There is no build step and no runtime.
+
+## Setup
+
+Clone the repository. There is nothing to install.
+
+## Usage
+
+The site reads:
 
 https://raw.githubusercontent.com/d0raka/d0rz-status/main/status.json
 
-## Schema
+The committed file is a schema bootstrap. A workstation exporter overwrites it. Keep `agent_count` a number. Do not add private fields.
 
 ```json
 {
@@ -29,4 +41,6 @@ https://raw.githubusercontent.com/d0raka/d0rz-status/main/status.json
 }
 ```
 
-`agent_count` must stay a number. Do not add hostnames, IP addresses, ports, SSH details, Docker data, filesystem paths, tokens, or other private fields.
+## License
+
+MIT. See [LICENSE](LICENSE).
