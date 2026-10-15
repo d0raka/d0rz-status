@@ -13,7 +13,7 @@ The live document the site reads:
 
 https://raw.githubusercontent.com/d0raka/d0rz-status/main/status.json
 
-The homepage that renders it is [d0rz.is-a.dev](https://d0rz.is-a.dev).
+The homepage that renders it is [d0raka.github.io/d0rz](https://d0raka.github.io/d0rz/).
 
 ## Features
 
@@ -23,7 +23,7 @@ The homepage that renders it is [d0rz.is-a.dev](https://d0rz.is-a.dev).
 
 ## Tech stack
 
-JSON only. There is no build step and no runtime. CI checks that `status.json` parses.
+JSON plus a small Python unittest. There is no build step and no runtime. CI checks that `status.json` parses and has the required fields.
 
 ## Setup
 
