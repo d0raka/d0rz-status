@@ -1,12 +1,12 @@
 {
   "status": "healthy",
-  "cpu_percent": 46.9,
-  "memory_percent": 26.6,
+  "cpu_percent": 74.0,
+  "memory_percent": 26.3,
   "disk_percent": 30.5,
-  "uptime_seconds": 1479917,
+  "uptime_seconds": 1480221,
   "agent_count": 0,
   "service_count": 7,
   "platform": "Ubuntu / ARM64",
   "amd64_emulation": false,
-  "updated_at": "2026-11-06T00:20:15Z"
+  "updated_at": "2026-11-06T00:25:19Z"
 }
